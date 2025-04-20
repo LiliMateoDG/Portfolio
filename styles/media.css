@@ -1,0 +1,258 @@
+/* ================================================== */
+/* =================  Tablet(≤1024px)  ============== */
+/* ================================================== */
+
+@media (max-width: 1024px) {
+	
+	/* ------------------ Estilos Texto ------------------- */
+	h1 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 6.73vw;
+		line-height: 6.73vw;
+		color: var(--black);
+	}
+	h2 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 5.27vw;
+		line-height: 5.27vw;
+		color: var(--black);
+	}
+	h3 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: 500;
+		font-size: clamp(30px, 3.91vw, 66px);
+		line-height: clamp(30px, 4.83vw, 70px);
+		color: var(--black);
+	}
+	h4 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: clamp(12px,2.05vw,28px);
+		color: var(--black);
+	}
+	
+	h5 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: oblique;
+		font-weight: lighter;
+		font-size: clamp(12px,2.05vw,28px);
+		color: var(--gray);
+	}
+	
+	.texto_1 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: oblique;
+		font-weight: light;
+		font-size: 1.75vw;
+		line-height: 2.34vw;
+		color: var(--black);
+	}
+	
+	.texto_2 {
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.46vw;
+		line-height: 1.75vw;
+		color: var(--black);
+	}
+	
+	.paratexto_1 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: clamp(7px, 1.09vw, 15px);
+		color: var(--black);
+	}
+	
+	.paratexto_2 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: clamp(7px, 1.09vw, 15px);
+		color: var(--gray);
+	}
+	
+	.button_1{
+		white-space: nowrap;
+		text-transform: capitalize;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: clamp(12px, 1.83vw, 16px);
+	}
+	
+	.button_2{
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-size: 1.54vw;
+	}
+	
+	.active {
+		color: var(--black);
+		font-weight: bold;
+		background-color: transparent;
+	}
+	
+	.unactive {
+		color: var(--gray);
+		font-weight: 350;
+		background-color: transparent;
+	}
+}
+
+/* ================================================== */
+/* ================  Mobile(≤480px)  ================ */
+/* ================================================== */
+
+@media (max-width: 480px) {
+	
+	/* ------------------ Estilos Texto ------------------- */
+	h1 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 18.32vw;
+		line-height: 17.30vw;
+		color: var(--black);
+	}
+	h2 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 13.23vw;
+		line-height: 13.23vw;
+		color: var(--black);
+	}
+	h3 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 11.19vw;
+		line-height: 11.19vw;
+		color: var(--black);
+	}
+	h4 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 6.11vw;
+		color: var(--black);
+	}
+	
+	h5 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: oblique;
+		font-weight: lighter;
+		font-size: 6.11vw;
+		color: var(--gray);
+	}
+	
+	.texto_1 {
+		text-align: left;
+		font-family: AV Estiana;
+		font-style: oblique;
+		font-weight: light;
+		font-size: 5.09vw;
+		line-height: 6.62vw;
+		color: var(--black);
+	}
+	
+	.texto_2 {
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 4.58vw;
+		line-height: 5.34vw;
+		color: var(--black);
+	}
+
+	.texto_3 {
+		text-align: left;
+		font-family: Av Estiana;
+		font-style: oblique;
+		font-weight: lighter;
+		font-size: 4.58vw;
+		line-height: 5.34vw;
+		color: var(--black);
+	}
+	
+	.paratexto_1 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 5.50vw;
+		color: var(--black);
+	}
+	
+	.paratexto_2 {
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 5.50vw;
+		color: var(--gray);
+	}
+	
+	.button_1{
+		white-space: nowrap;
+		text-transform: capitalize;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 5.59vw;
+	}
+	
+	.button_2{
+		white-space: nowrap;
+		text-align: left;
+		font-family: JetBrains Mono;
+		font-style: normal;
+		font-size: 5.34vw;
+	}
+	
+	.active {
+		color: var(--black);
+		font-weight: bold;
+		background-color: transparent;
+	}
+	
+	.unactive {
+		color: var(--gray);
+		font-weight: 350;
+		background-color: transparent;
+	}
+
+}
