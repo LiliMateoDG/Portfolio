@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>LM.DG Web Portfolio</title>
+</head>
+<body>
+    <div id="device-warning" class="warning">
+        <h5>¡Hola! La versión móvil de mi portafolio todavía está en desarrollo. Por ahora, podés navegarlo mejor desde una computadora.
+        </h5>
+        <button id="close-warning" class="button_2">Continuar en la versión de escritorio</button>
+    </div>
+    <div id="LM_DG_Portfolio">
+        <div id="s1-inicio" class="sección_2"> <!--Inicio-->
+            <div id="s1-1-bienvenida">
+                <div id="s1-1-1-header"> <!--header-->
+                    <header class="grid-container">
+                        <p id="ESP" class="button_1 idioma active" >ESP</p>
+                        <p id="ENG" class="button_1 idioma unactive">ENG</p>
+                        <p id="email" class="paratexto_2"><span class="contacto" data-copy="lilimateodg@gmail.com">lilimateodg@gmail.com</span></p>
+                        <p id="cel-arg" class="paratexto_2"><span class="contacto" data-copy="+54 11 5043 3377">+54 11 5043 3377</span></p>
+                        <p id="cel-esp" class="paratexto_2"><span class="contacto" data-copy="+34 653 58 30 98">+34 653 58 30 98</span></p>
+                    </header>
+                </div>
+                <div id="s1-1-2-portada"> <!--portada Portafolio-->
+                    <div id="bienvenida" class="grid-container">
+                        <div id="bienvenida-IMG">
+                            <img class="IMG-Col" src="./assets/images/portfolio.png" alt="Portfolio">
+                        </div> 
+                        <div id="Hi">
+                            <h4>¡Hola! Soy</h4>
+                            <h5>Hi! I'm</h5>
+                        </div>
+                        <div id="LilianaMateo" class="LM-inicial">
+                            <h3 class="scroll-toggle">Liliana</h3>
+                            <h3 class="scroll-toggle">Mateo</h3>
+                        </div>
+                        <div id="Hi_PH" class="LM-inicial place-holder">
+                            <h3 class="scroll-toggle">Liliana</h3>
+                            <h3 class="scroll-toggle">Mateo</h3>
+                        </div>
+                        <nav id="índice"> <!--índice-->
+                            <img id="índice-bullet" src="../assets/icons/bullet_1.png" alt="Bullet">
+                            <ul id="índice-lista" class="I-inicial">
+                                <li><button id="index-tipo" class="index-button button_2 unactive" data-category="tipografia">Tipografía</button></li>
+                                <li><button id="index-ilus" class="index-button button_2 unactive" data-category="ilustracion">Ilustración</button></li>
+                                <li><button id="index-iden" class="index-button button_2 unactive" data-category="identidad">Identidad</button></li>
+                                <li><button id="index-exp" class="index-button button_2 unactive" data-category="experimental">Experimental</button></li>
+                            </ul>
+                        </nav>
+                        <div id="bienvenida-portada-txt">
+                            <h4>Bienvenido a mi</h4>
+                            <h5>Welcome to my</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="s1-2-sobremí"> <!--Sobre Mí-->
+                <div id="sobre-mí" class="grid-container">
+                    <div id="sobremí-txt">
+                        <h2 id="SM_PH" class="place-holder">Liliana Mateo</h2>
+                        <h5 id="dg" >Diseñadora Gráfica</h5>
+                    </div>
+                    <div id="sobremí-IMG">
+                        <img class="IMG-Col" src="./assets/images/sobremi.png" alt="Sobre mí">
+                    </div>
+                    <div id="sobremí-descripción">
+                        <div id="sobremí-descripción-txt">
+                            <p class="texto_1">
+                                Tipografia, dibujo, espacialidad y experimentación.
+                            </p>
+                            <p class="texto_1">
+                                Mis diseños y mis procesos no se encasillan en un solo área.
+                                Te invito a conocer mi trabajo.
+                            </p>
+                        </div>
+                        <nav id="índice-secciones">
+                            <p id="ANALÓGICA-button" class="section-button button_1 active" >analógica</p>
+                            <p id="VECTORIAL-button" class="section-button button_1 unactive">vectorial</p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="s2-analógica" class="sección_1"> <!--Analógica-->
+            <div id="s2-1-portada">
+                <div id="analógica-portada" class="grid-container"> <!--portada Analógica-->
+                    <div id="analógica-IMG">
+                        <img class="IMG-Col" src="./assets/images/analógica.png" alt="Analógica">
+                    </div>
+                    <div id="analógica-txt">
+                        <h5>En gran parte de mis diseños siguen presentes las técnicas tradicionales de trabajo gráfico.
+                        </h5>
+                        <h5>Considero que con ellas pueden alcanzarse resultados únicos y personales, con una expresividad diferente a la de las herramientas digitales modernas.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div id="s2-2-proyectos" class="sección_2"> <!--Proyectos Analógica-->
+                <!--Mamanchi-->
+                <div data-tags="ilustracion identidad" class="grid-container proyecto P_estandar_corto">
+                    <div class="proyecto-IMG">
+                        <img class="IMG-Col" src="./assets/images/Mamanchi/mamanchi.png" alt="proyecto imagen">
+                    </div>
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2024</p>   
+                        <h2>Mamanchi</h2>
+                        <p id="txt-mamanchi" class="texto_2">Propuesta de afiche para el cortometraje documental «Mamanchi», dirigido por Robert Verástegui en 2021.</p>
+                        <div class="display-info">
+                            <p data-tag="Afiche" class="paratexto_2">Afiche</p>
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="behance">
+                        <h3>
+                            <a href="https://www.behance.net/gallery/223589037/Mamanchi-Afiche-promocional" target="_blank" class="link-behance unactive">+Behance</a>
+                        </h3>
+                    </div>
+                </div>
+                <!--Tortugas-->
+                <div data-tags="ilustracion experimental" class="grid-container proyecto P_estandar_largo overflow-x">
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2021</p>
+                        <h2>Tortugas</h2>
+                        <p id="txt-tortugas" class="texto_2">Búsqueda de diferentes lenguajes gráficos trabajando sobre un mismo sujeto. Experimentación con diferentes técnicas de ilustración e impresiones artesanal.</p>
+                        <div class="display-info">
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                        </div>
+                    </div>
+                    <div class="proyecto-IMG display-info">
+                        <img class="IMG-Row" src="./assets/images/tortugas/playa g.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/tortugas/mondrian c.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/tortugas/psicodélico b.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/tortugas/cazador 2 b.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/tortugas/chill c.jpg" alt="proyecto imagen">
+                        <div class="behance">
+                            <h3>
+                                <a href="https://www.behance.net/gallery/124692023/Lenguajes" target="_blank" class="link-behance unactive">+Behance</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Escrachos-->
+                <div data-tags="ilustracion" class="grid-container proyecto P_estandar_largo overflow-x">
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2022</p>
+                        <h2>Escrachos</h2>
+                        <p id="txt-escrachos" class="texto_2">En los tiempos modernos todos somos fotógrafos. Como lado B de esos retratos perfectamente pulidos y retocados que publicamos en redes, tenemos también esas capturas que escondemos y guardamos entre amigos y familiares. Esos momentos desprolijos pero honestos que guardamos de recuerdo con cariño, como chiste interno.
+                            Estos dibujos son reinterpretaciones de algunos de esos escraches.</p>
+                        <div class="display-info">
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="proyecto-IMG display-info">
+                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-01.png" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-02.png" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-03.png" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-04.png" alt="proyecto imagen">
+                        <div class="behance">
+                            <h3>
+                                <a href="https://www.behance.net/gallery/161045225/Escrachos" target="_blank" class="link-behance unactive">+Behance</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Bitacoras-->
+                <div class="grid-container">
+                    <div data-tags="ilustracion tipografia" class="proyecto P_chico pc-1ro"> <!--Bitácora 1-->
+                        <div>
+                            <p class="paratexto_1">2023</p>
+                            <h3>Bitácora 1</h3>
+                        </div>
+                        <div class="proyecto-IMG">
+                            <img class="IMG-Col" src="./assets/images/sketchbook 1/take_me_to_church.png" alt="proyecto imagen">
+                        </div>
+                        <p id="txt-bit1" class="texto_1">Acuarela, lápiz y marcador sobre cartón blanco</p>
+                        <div class="display-info">
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                            <p data-tag="Lettering" class="paratexto_2">Lettering</p>
+                        </div>
+                    </div>
+                    <div data-tags="ilustracion tipografia" class="proyecto P_chico pc-2do"> <!--Bitácora 2-->
+                        <div>
+                            <p class="paratexto_1">2024</p>
+                            <h3>Bitácora 2</h3>
+                        </div>
+                        <div class="proyecto-IMG">
+                            <img class="IMG-Col" src="./assets/images/sketchbook 2/tapa.png" alt="proyecto imagen">
+                            <img class="IMG-Col" src="./assets/images/sketchbook 2/contratapa.png" alt="proyecto imagen">
+                        </div>
+                        <p id="txt-bit2" class="texto_1">Marcador POSCA y acrílico sobre fibrofácil</p>
+                        <div class="display-info">
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                            <p data-tag="Lettering" class="paratexto_2">Lettering</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Manifiesto Surrealista-->
+                <div data-tags="tipografia"  class="proyecto P_destacado">
+                    <div class="overflow-x">
+                        <div class="P_slide PS_principal"> <!--MS slide principal-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <img class="IMG-Col" src="./assets/images/Manifiestos del Surrealismo/portada.png" alt="proyecto imagen">
+                                </div>
+                                <p class="paratexto_1">2023</p>
+                                <div class="proyecto-txt">
+                                    <h1>Manifiestos del surrealismo</h1>
+                                    <div id="txt-manifiesto">
+                                        <p class="texto_2">En 1924 André Bretón publicó el Primer Manifiesto Surrealista, en Francia. En 1992, la editorial Argonauta presentó la primera traducción al español de ese escrito, redactada por Aldo Pelegrini y titulada Manifiestos del Surrealismo.
+                                        </p>
+                                        <p class="texto_2">Esta es una edición artesanal realizada a partir de extractos de dicha traducción.
+                                        </p>
+                                    </div>
+                                    <div class="display-info">
+                                        <p data-tag="Editorial" class="paratexto_2">Editorial</p>
+                                    </div>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="P_slide PS_secundario"> <!--MS slide secundario-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <video class="IMG-Col" autoplay muted loop playsinline>
+                                        <source src="./assets/images/Manifiestos del Surrealismo/manifiestos-video.mp4" type="video/webm">
+                                        Tu navegador no soporta el video.
+                                      </video>
+                                    <div class="behance">
+                                        <h3>
+                                            <a href="https://www.behance.net/gallery/175864583/Manifiestos-de-Surrealismo" target="_blank" class="link-behance unactive">+Behance</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="txt-sec-manifiesto" class="proyecto-txt">
+                                    <p class="texto_1">Sistema editorial basado en recortes y calados.
+                                    </p>
+                                    <p class="texto_1">Plaqueta de 80 páginas, formato cerrado A5
+                                    </p>
+                                    <p class="texto_1">Encuadernación en papel misionero 150gr
+                                    </p>
+                                    <p class="texto_1">Interior: Splendorgel 90gr, Ygrid rojo 90gr
+                                    </p>
+                                    <p class="texto_1">Intervenciones realizadas a mano con bisturí
+                                    </p>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Haha-->
+                <div data-tags="tipografia experimental" class="proyecto P_destacado">
+                    <div class="overflow-x">
+                        <div class="P_slide PS_principal"> <!--HH slide principal-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <img class="IMG-Col" src="./assets/images/HAHA/Cubierta.png" alt="proyecto imagen">
+                                </div>
+                                <p class="paratexto_1">2024</p>
+                                <div class="proyecto-txt">
+                                    <h1>Madre (Haha)</h1>
+                                    <div id="txt-haha">
+                                        <p class="texto_2">Yasunari Kawabata publicó en 1968 una recopilación de cuentos titulada «Historias en la palma de la mano» («Enohira no Shōsetsu», en el japonés original).
+                                        </p>
+                                        <p class="texto_2">«Madre» («Haha») es uno de los incluidos en esa selección, presentado en este proyecto en formato de libro no-convencional.
+                                        </p>
+                                    </div>
+                                    <div class="display-info">
+                                        <p data-tag="Editorial" class="paratexto_2">Editorial</p>
+                                        <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                                    </div>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="P_slide PS_secundario"> <!--HH slide secundario-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <video class="IMG-Col" autoplay muted loop playsinline>
+                                        <source src="./assets/images/HAHA/HAHA video.mp4" type="video/webm">
+                                        Tu navegador no soporta el video.
+                                      </video>
+                                    <div class="behance">
+                                        <h3 class="link-behance unactive">
+                                            +Behance
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="txt-sec-HAHA" class="proyecto-txt">
+                                    <p class="texto_1">Encuadernación no convencional, impresión chorro de tinta sobre tela para lienzo
+                                    </p>
+                                    <p class="texto_1">Interior: Tiziano brina 160gr, Elle Erre blanco 220gr, y Obra 150gr
+                                    </p>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Animaciones-->
+                <div class="grid-container">
+                    <div data-tags="ilustracion" class="proyecto P_chico pc-1ro"> <!--Folioscopio-->
+                        <div>
+                            <p class="paratexto_1">2022</p>
+                            <h3>Folioscopio</h3>
+                        </div>
+                        <div class="proyecto-IMG">
+                            <img class="IMG-Col" src="./assets/images/folioscopio.gif" alt="proyecto imagen">
+                        </div>
+                        <p id="txt-folioscopio" class="texto_1">Microfibra sobre papel escaneado y digitalizado</p>
+                        <div class="display-info">
+                            <p data-tag="Animación" class="paratexto_2">Animación</p>
+                        </div>
+                    </div>
+                    <div data-tags="ilustracion experimental" class="proyecto P_chico pc-2do"> <!--Animación experimental-->
+                        <div>
+                            <p class="paratexto_1">2022</p>
+                            <h3>Animación experimental</h3>
+                        </div>
+                        <div class="proyecto-IMG">
+                            <img class="IMG-Col" src="./assets/images/animación experimental.gif" alt="proyecto imagen">
+                        </div>
+                        <p id="txt-anima" class="texto_1">Tinta china sobre papel acuarela, escaneada y digitalizada</p>
+                        <div class="display-info">
+                            <p data-tag="Animación" class="paratexto_2">Animación</p>
+                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Algo está mutando-->
+                <div data-tags="ilustracion experimental" class="proyecto P_destacado">
+                    <div class="overflow-x">
+                        <div class="P_slide PS_principal"> <!--AM slide principal-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <video class="IMG-Col" autoplay muted loop playsinline>
+                                        <source src="./assets/images/Algo está mutando/Algo está mutando.webm" type="video/webm">
+                                        Tu navegador no soporta el video.
+                                    </video>
+                                </div>
+                                <p class="paratexto_1">2021</p>
+                                <div class="proyecto-txt">
+                                    <h1>Algo está mutando</h1>
+                                    <p id="txt-AEM" class="texto_2">Corto mudo desarrollado a partir del título asignado «Algo está mutando»</p>
+                                    <div class="display-info">
+                                        <p data-tag="Animación" class="paratexto_2">Animación</p>
+                                        <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                                    </div>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="P_slide PS_secundario"> <!--AM slide secundario-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <video class="IMG-Col" autoplay muted loop playsinline>
+                                        <source src="./assets/images/Algo está mutando/proceso.webm" type="video/webm">
+                                        Tu navegador no soporta el video.
+                                      </video>
+                                    <div class="behance">
+                                        <h3>
+                                            <a href="https://www.behance.net/gallery/132619649/corto-mudo" target="_blank" class="link-behance unactive">+Behance</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="txt-sec-AEM" class="proyecto-txt">
+                                    <p class="texto_1">Primer esquicio a partir del cual se siguió desarrollando la idea
+                                    </p>
+                                    <p class="texto_1">Improvisación con téctina de stop-motion 
+                                    </p>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--Serie-->
+                <div data-tags="experimental" class="grid-container proyecto P_estandar_largo overflow-x">
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2022</p>
+                        <h2>Serie</h2>
+                        <div id="txt-serie">
+                            <p class="texto_2">Siete composiciones abstractas.</p>
+                            <p class="texto_2">Un estudio sobre el ritmo, la pregnancia, y los niveles compositivos. Experimentación con materialidad.</p>
+                        </div>
+                        <div class="display-info">
+                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                        </div>
+                    </div>
+                    <div class="proyecto-IMG display-info">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza1.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza2.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza3.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza4.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza5.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza6.jpg" alt="proyecto imagen">
+                        <img class="IMG-Row" src="./assets/images/Serie/pieza7.jpg" alt="proyecto imagen">
+                        <div class="behance">
+                            <h3 class="link-behance unactive">+Behance</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Búsquedas-->
+                <div class="grid-container">
+                    <div data-tags="experimental" class="proyecto P_chico pc-2do">
+                        <div>
+                            <p class="paratexto_1">2021-2025</p>
+                            <h3>Búsquedas</h3>
+                        </div>
+                        <div class="proyecto-IMG">
+                            <video class="IMG-Col" autoplay muted loop playsinline>
+                                <source src="./assets/images/busquedas.webm" type="video/webm">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </div>
+                        <p id="txt-busquedas" class="texto_1">Un vistazo al contenido de mis bitácoras</p>
+                        <div class="display-info">
+                            <p data-tag="Lettering" class="paratexto_2">Lettering</p>
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustracion</p>
+                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="s3-vectorial" class="sección_1"> <!--Vectorial-->
+            <div id="s3-1-portada">
+                <div id="vectorial-portada" class="grid-container">
+                    <div id="vectorial-IMG">
+                        <img class="IMG-Col" src="./assets/images/vectorial.png" alt="Vectorial">
+                    </div>
+                    <div id="vectorial-txt">
+                        <h5>Las herramientas digitales me permiten un trabajo más meticuloso.</h5>
+                        <h5>En estos diseños resalta la atención al detalle, el ajuste y la construcción de sistemas.</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="s3-2-proyectos" class="sección_2">
+                <!--Niñez Grande-->
+                <div data-tags="tipografia identidad" class="proyecto P_destacado">
+                    <div class="overflow-x">
+                        <div class="P_slide PS_principal"> <!--NG slide principal-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <img class="IMG-Col" src="./assets/images/NiñezGrande/aficheMockup.png" alt="proyecto imagen">
+                                </div>
+                                <p class="paratexto_1">2023</p>
+                                <div class="proyecto-txt">
+                                    <h1>Niñez Grande</h1>
+                                    <p id="txt-NG" class="texto_2">Campaña social de concientización sobre las niñeces en condición de adoptabilidad, inspirada en el colectivo detrás del #AdoptáNiñesGrandes en redes sociales.</p>
+                                    <div class="display-info">
+                                        <p data-tag="Identidad" class="paratexto_2">Sistema de identidad</p>
+                                        <p data-tag="Afiche" class="paratexto_2">Afiche</p>
+                                        <p data-tag="Editorial" class="paratexto_2">Editorial</p>
+                                        <p data-tag="Web" class="paratexto_2">Web</p>
+                                    </div>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="P_slide PS_secundario"> <!--NG slide secundario-->
+                            <div class="grid-container">
+                                <div class="proyecto-IMG">
+                                    <img class="IMG-Col" src="./assets/images/NiñezGrande/webMockup.gif" alt="proyecto imagen">
+                                    <div class="behance">
+                                        <h3>
+                                            <a href="https://www.behance.net/gallery/175864583/Manifiestos-de-Surrealismo" target="_blank" class="link-behance unactive">+Behance</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="txt-sec-NG" class="proyecto-txt">
+                                    <p class="texto_1">Diseño social
+                                    </p>
+                                    <p class="texto_1">Sistema de identidad gráfico basado en tipografía
+                                    </p>
+                                </div>
+                                <div class="arrow">
+                                    <img class="IMG-Col bullet" src="./assets/icons/bullet_1.png" alt="proyecto imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Laboratorio de no ficción-->
+                <div data-tags="tipografia" class="grid-container proyecto P_estandar_corto">
+                    <div class="proyecto-IMG">
+                        <img class="IMG-Col" src="./assets/images/laboratorio/hero-desk.jpg" alt="proyecto imagen">
+                    </div>
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2023</p>   
+                        <h2>Laboratorio de noficción creativa</h2>
+                        <p id="txt-laboratorio" class="texto_2">Propuesta de re-diseño para este lanzamiento de la revista digital Anfibia.</p>
+                        <div class="display-info">
+                            <p data-tag="Editorial" class="paratexto_2">Editorial</p>
+                            <p data-tag="Web" class="paratexto_2">Web</p>
+                        </div>
+                    </div>
+                    <div class="behance">
+                        <h3>
+                            <a href="https://www.behance.net/gallery/188324991/Laboratorio-de-no-ficcion-creativa" target="_blank" class="link-behance unactive">+Behance</a>
+                        </h3>
+                    </div>
+                </div>
+                <!--Nuevo Malón-->
+                <div data-tags="identidad" class="grid-container proyecto P_estandar_corto">
+                    <div class="proyecto-IMG">
+                        <img class="IMG-Col" src="./assets/images/Nuevo Malon/Poster.png" alt="proyecto imagen">
+                    </div>
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2024</p>   
+                        <h2>Nuevo Malón</h2>
+                        <p id="txt-NM" class="texto_2">Sistema de identidad para centro cultural inspirado en el colectivo Identidad Marrón.</p>
+                        <div class="display-info">
+                            <p data-tag="Identidad" class="paratexto_2">Sistema de identidad</p>
+                            <p data-tag="Afiche" class="paratexto_2">Afiche</p>
+                        </div>
+                    </div>
+                    <div class="behance">
+                        <h3 class="link-behance unactive">
+                            +Behance
+                        </h3>
+                    </div>
+                </div>
+                <!--Diseñarse a uno mismx-->
+                <div data-tags="ilustracion identidad" class="grid-container proyecto P_estandar_corto">
+                    <div class="proyecto-IMG">
+                        <img class="IMG-Col" src="./assets/images/Diseñarse a uno misme/2022_2c-N2-TN-2022_09_02-TP1-Mateo_Liliana.pdf_page-0001.jpg" alt="proyecto imagen">
+                    </div>
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2022</p>   
+                        <h2>Diseñarse a uno mismx</h2>
+                        <p id="txt-diseñarse" class="texto_2">Afiche ilustrado a dos tintas para impresión en serigrafía.</p>
+                        <div class="display-info">
+                            <p data-tag="Afiche" class="paratexto_2">Afiche</p>
+                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="behance">
+                        <h3>
+                            <a href="https://www.behance.net/gallery/161056967/Disenarse-a-une-mismx" target="_blank" class="link-behance unactive">+Behance</a>
+                        </h3>
+                    </div>
+                </div>
+                <!--Luchas transversales-->
+                <div data-tags="tipografia" class="grid-container proyecto P_estandar_corto">
+                    <div class="proyecto-IMG">
+                        <img class="IMG-Col" src="./assets/images/Luchas Transversales/TP03-JUANCHO-FLOR-Liliana-Mateo_page-0001.jpg" alt="proyecto imagen">
+                    </div>
+                    <div class="proyecto-txt">
+                        <p class="paratexto_1">2023</p>   
+                        <h2>Luchas transversales</h2>
+                        <p id="txt-LT" class="texto_2">Afiche infográfico realizado a partir del estudio «Ellas alimentan al mundo, tierra para las que trabajan», publicado en 2021 por LatFem y We Effect.</p>
+                        <div class="display-info">
+                            <p data-tag="Afiche" class="paratexto_2">Afiche</p>
+                            <p data-tag="Información" class="paratexto_2">Diseño de información</p>
+                        </div>
+                    </div>
+                    <div class="behance">
+                        <h3>
+                            <a href="https://www.behance.net/gallery/193058339/Ellas-alimentan-el-mundo-infografia" target="_blank" class="link-behance unactive">+Behance</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="degrade-transicion"></div>
+            <div id="footer" class="grid-container">
+                <div id="footer_1">
+                    <p class="paratexto_2">Diseño web por Liliana Mateo</p>
+                    <p class="paratexto_2">Última actualización: Marzo 2025</p>
+                </div>
+                <div id="footer_2">
+                    <p class="paratexto_2">Todas las fuentes tipográficas utilizadas en este diseño son de uso libre.</p>
+                    <p class="paratexto_2">Especificaciones y créditos:</p>
+                    <ul>
+                        <p class="paratexto_2">Romantica - por Santiago Arango</p>
+                        <p class="paratexto_2">Kudry - por Paratype</p>
+                        <p class="paratexto_2">Roboto - por Paratype y Font Bureau</p>
+                        <p class="paratexto_2">JetBrains Mono - por Konstantin Bulenkov y Philipp Nurullin</p>
+                    </ul>
+                </div>
+                <div id="footer_3">
+                    <img class="icon" src="./assets/icons/instagram.svg" alt="Instagram">
+                    <a href="mailto:lilimateodg@gmail.com">
+                        <img class="icon" src="./assets/icons/mail.svg" alt="Gmail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/liliana-mateo-dg/" target="_blank" rel="noopener">
+                        <img class="icon" src="./assets/icons/linkedin-line.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.behance.net/lilianamateo" target="_blank" rel="noopener">
+                        <img class="icon" src="./assets/icons/behance.svg" alt="Behance">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/lang.js" defer></script>
+    <script src="scripts/device.js" defer></script>
+</body>
+</html>
