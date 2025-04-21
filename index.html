@@ -233,9 +233,9 @@
                             <div class="grid-container">
                                 <div class="proyecto-IMG">
                                     <video class="IMG-Col" preload="auto" muted loop playsinline>
-                                        <source src="./assets/images/Manifiestos del Surrealismo/manifiestosVideo.mp4" type="video/webm">
+                                        <source src="./assets/media/manifiestosVideo.mp4" type="video/webm">
                                         Tu navegador no soporta el video.
-                                      </video>
+                                    </video>
                                     <div class="behance">
                                         <h3>
                                             <a href="https://www.behance.net/gallery/175864583/Manifiestos-de-Surrealismo" target="_blank" class="link-behance unactive">+Behance</a>
@@ -292,7 +292,7 @@
                             <div class="grid-container">
                                 <div class="proyecto-IMG">
                                     <video class="IMG-Col" preload="auto" muted loop playsinline>
-                                        <source src="./assets/images/HAHA/HAHA video.mp4" type="video/webm">
+                                        <source src="./assets/media/HAHAVideo.mp4" type="video/webm">
                                         Tu navegador no soporta el video.
                                       </video>
                                     <div class="behance">
@@ -335,7 +335,10 @@
                             <h3>Animación experimental</h3>
                         </div>
                         <div class="proyecto-IMG">
-                            <img class="IMG-Col" src="./assets/images/animacionExperimental.gif" alt="proyecto imagen">
+                            <video class="IMG-Col" preload="auto" muted loop playsinline>
+                                <source src="./assets/media/animacionExperimental.mp4" type="video/webm">
+                                Tu navegador no soporta el video.
+                            </video>
                         </div>
                         <p id="txt-anima" class="texto_1">Tinta china sobre papel acuarela, escaneada y digitalizada</p>
                         <div class="display-info">
@@ -431,7 +434,7 @@
                         </div>
                         <div class="proyecto-IMG">
                             <video class="IMG-Col" preload="auto" muted loop playsinline>
-                                <source src="./assets/images/busquedas.mp4" type="video/webm">
+                                <source src="./assets/media/busquedas.mp4" type="video/webm">
                                 Tu navegador no soporta el video.
                             </video>
                         </div>
@@ -619,40 +622,40 @@
         </footer>
     </div>
     <script>
-      // 1. Obtenemos imágenes y videos
-      const images = Array.from(document.images);
-      const videos = Array.from(document.querySelectorAll("video"));
-    
-      const totalResources = images.length + videos.length;
-      let loadedResources = 0;
-    
-      const progressText = document.getElementById("progress-text");
-    
-      function updateProgress() {
-        loadedResources++;
-        const percent = Math.round((loadedResources / totalResources) * 100);
-        progressText.textContent = `Cargando ${percent}%`;
-    
-        if (loadedResources === totalResources) {
-          document.body.classList.add("loaded");
+        // 1. Obtenemos imágenes y videos
+        const images = Array.from(document.images);
+        const videos = Array.from(document.querySelectorAll("video"));
+      
+        const totalResources = images.length + videos.length;
+        let loadedResources = 0;
+      
+        const progressText = document.getElementById("progress-text");
+      
+        function updateProgress() {
+          loadedResources++;
+          const percent = Math.round((loadedResources / totalResources) * 100);
+          progressText.textContent = `Cargando ${percent}%`;
+      
+          if (loadedResources === totalResources) {
+            document.body.classList.add("loaded");
+          }
         }
-      }
-    
-      // 2. Contamos las imágenes (con clones para forzar la carga)
-      images.forEach(img => {
-        const clone = new Image();
-        clone.onload = clone.onerror = updateProgress;
-        clone.src = img.src;
-      });
-    
-      // 3. Contamos los videos
-      videos.forEach(video => {
-        // Esperamos a que puedan reproducirse sin problema
-        video.oncanplaythrough = updateProgress;
-        video.onerror = updateProgress;
-        // Forzamos la carga
-        video.load();
-      });
+      
+        // 2. Contamos las imágenes (con clones para forzar la carga)
+        images.forEach(img => {
+          const clone = new Image();
+          clone.onload = clone.onerror = updateProgress;
+          clone.src = img.src;
+        });
+      
+        // 3. Contamos los videos
+        videos.forEach(video => {
+          // Esperamos a que puedan reproducirse sin problema
+          video.oncanplaythrough = updateProgress;
+          video.onerror = updateProgress;
+          // Forzamos la carga
+          video.load();
+        });
     </script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/lang.js" defer></script>
