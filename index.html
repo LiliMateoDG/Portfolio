@@ -7,6 +7,11 @@
     <title>LM.DG Web Portfolio</title>
 </head>
 <body>
+    <div id="preloader">
+        <div class="loader-text">
+            <p id="progress-text" class="texto_2">Cargando 0%</p>
+        </div>
+    </div>
     <div id="device-warning" class="warning">
         <h5>¡Hola! La versión móvil de mi portafolio todavía está en desarrollo. Por ahora, podés navegarlo mejor desde una computadora.
         </h5>
@@ -330,7 +335,7 @@
                             <h3>Animación experimental</h3>
                         </div>
                         <div class="proyecto-IMG">
-                            <img class="IMG-Col" src="./assets/images/animación experimental.gif" alt="proyecto imagen">
+                            <img class="IMG-Col" src="./assets/images/animacionExperimental.gif" alt="proyecto imagen">
                         </div>
                         <p id="txt-anima" class="texto_1">Tinta china sobre papel acuarela, escaneada y digitalizada</p>
                         <div class="display-info">
@@ -613,6 +618,28 @@
             </div>
         </footer>
     </div>
+    <script>
+        const images = document.images;
+        const totalImages = images.length;
+        let imagesLoaded = 0;
+    
+        const progressText = document.getElementById("progress-text");
+    
+        for (let i = 0; i < totalImages; i++) {
+          const img = images[i];
+          const clone = new Image();
+          clone.onload = clone.onerror = () => {
+            imagesLoaded++;
+            const percent = Math.round((imagesLoaded / totalImages) * 100);
+            progressText.textContent = `Cargando ${percent}%`;
+    
+            if (imagesLoaded === totalImages) {
+              document.body.classList.add("loaded");
+            }
+          };
+          clone.src = img.src;
+        }
+      </script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/lang.js" defer></script>
     <script src="scripts/device.js" defer></script>
