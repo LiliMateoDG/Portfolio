@@ -149,6 +149,21 @@ a:-webkit-any-link {
 	text-align: center;
 }
 
+#preloader {
+	position: fixed;
+	inset: 0;
+	background: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+  }
+  
+
+body.loaded #preloader {
+	display: none;
+}
+
 #LM_DG_Portfolio {
 	position: relative;
 	width: 100%;
@@ -162,11 +177,6 @@ a:-webkit-any-link {
 	--web-view-id: DLM.DG_Portfolio;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
-}
-
-body {
-min-width: 1024px; /* O el mínimo que consideres aceptable para tu diseño */
-overflow-x: auto;
 }
 
 .IMG-Col {
