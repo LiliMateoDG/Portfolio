@@ -619,27 +619,41 @@
         </footer>
     </div>
     <script>
-        const images = document.images;
-        const totalImages = images.length;
-        let imagesLoaded = 0;
+      // 1. Obtenemos imágenes y videos
+      const images = Array.from(document.images);
+      const videos = Array.from(document.querySelectorAll("video"));
     
-        const progressText = document.getElementById("progress-text");
+      const totalResources = images.length + videos.length;
+      let loadedResources = 0;
     
-        for (let i = 0; i < totalImages; i++) {
-          const img = images[i];
-          const clone = new Image();
-          clone.onload = clone.onerror = () => {
-            imagesLoaded++;
-            const percent = Math.round((imagesLoaded / totalImages) * 100);
-            progressText.textContent = `Cargando ${percent}%`;
+      const progressText = document.getElementById("progress-text");
     
-            if (imagesLoaded === totalImages) {
-              document.body.classList.add("loaded");
-            }
-          };
-          clone.src = img.src;
+      function updateProgress() {
+        loadedResources++;
+        const percent = Math.round((loadedResources / totalResources) * 100);
+        progressText.textContent = `Cargando ${percent}%`;
+    
+        if (loadedResources === totalResources) {
+          document.body.classList.add("loaded");
         }
-      </script>
+      }
+    
+      // 2. Contamos las imágenes (con clones para forzar la carga)
+      images.forEach(img => {
+        const clone = new Image();
+        clone.onload = clone.onerror = updateProgress;
+        clone.src = img.src;
+      });
+    
+      // 3. Contamos los videos
+      videos.forEach(video => {
+        // Esperamos a que puedan reproducirse sin problema
+        video.oncanplaythrough = updateProgress;
+        video.onerror = updateProgress;
+        // Forzamos la carga
+        video.load();
+      });
+    </script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/lang.js" defer></script>
     <script src="scripts/device.js" defer></script>
