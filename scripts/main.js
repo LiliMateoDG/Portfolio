@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const behance = document.querySelectorAll(".link-behance");
 
   // seleccionar elementos de índice
-  const índice = document.querySelector("#índice-lista");
+  const index = document.querySelector("#índice");
+  const iList = document.querySelector("#índice-lista");
   const filtros = document.querySelectorAll(".index-button");
 
   // seleccionar elementos de índice de secciones
@@ -22,11 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // seleccionar proyectos
   const proyectos = document.querySelectorAll(".proyecto");
-  const pLargo = document.querySelectorAll(".P_estandar_largo");
 
   // seleccionar flechas
-  const bullets = document.querySelectorAll(".bullet");
-  const secFlechas = document.querySelectorAll(".P_estandar_largo > .proyecto-IMG");
+  const IBullet1 = document.getElementById("i-bullet_1");
+  const IBullet2 = document.getElementById("i-bullet_2");
+  const bullets = document.querySelectorAll(".arrow > .bullet");
+  const secFlechas = document.querySelectorAll(".P_estandar_largo > .grid-container > .proyecto-IMG");
 
   // seleccionar secciones
   const Inicio = document.getElementById("s1-1-bienvenida");
@@ -105,6 +107,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ------------------------ navegación -------------------------
 
+  // desplegar índice mobile
+  IBullet1.addEventListener("click", () => {
+    index.style.insetInline = '0px';
+    IBullet1.style.opacity = '0';
+    idioma.forEach(element => {
+      element.style.color = "var(--white)";
+    });
+  });
+
+  IBullet2.addEventListener("click", () => {
+    index.style.insetInline = '';
+    IBullet1.style.opacity = '100';
+    idioma.forEach(element => {
+      element.style.color = "";
+    });
+  });
+
   // filtrar proyectos al hacer click
   filtros.forEach(filtro => {
     filtro.addEventListener("click", () => {
@@ -171,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ------------------------ flechas ------------------------
 
+  // slides Proyectos Destacados
   bullets.forEach(bullet => {
     const slide = bullet.closest(".P_slide");
     bullet.addEventListener("click", () => {
@@ -243,22 +263,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (ScrollSM.top < 32) {
       LilianaMateo.classList = "LM-header";
       LilianaMateo.style.bottom = "";
-      índice.classList = "I-fijado";
+      iList.classList = "I-fijado";
     }
     else if (ScrollSM.top < 50*vh) {
       LilianaMateo.classList = "LM-titular";
       LilianaMateo.style.bottom = 100*vh - ScrollSM.bottom + "px";
-      índice.classList = "I-fijado";
+      iList.classList = "I-fijado";
     }
     else if (ScrollHi.bottom < 40*vh){
       LilianaMateo.classList = "LM-fijado";
       LilianaMateo.style.bottom = "";
-      índice.classList = "I-fijado";
+      iList.classList = "I-fijado";
     }
     else {
       LilianaMateo.classList = "LM-inicial";
       LilianaMateo.style.bottom = "";
-      índice.classList = "I-inicial";
+      iList.classList = "I-inicial";
     }
   };
 
