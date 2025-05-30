@@ -10,11 +10,9 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
-    <!-- Info adicional opcional -->
     <meta property="og:url" content="https://lilimateodg.github.io/">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link id="css-link" rel="stylesheet" href="./styles/media.css">
     <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
     <title>Liliana Mateo DG | Portafolio Web</title>
 </head>
@@ -23,11 +21,6 @@
         <div class="loader-text">
             <p id="progress-text" class="texto_2">Cargando 0%</p>
         </div>
-    </div>
-    <div id="device-warning" class="warning">
-        <h5>¡Hola! La versión móvil de mi portafolio todavía está en desarrollo. Por ahora, podés navegarlo mejor desde una computadora.
-        </h5>
-        <button id="close-warning" class="button_2">Continuar en la versión de escritorio</button>
     </div>
     <div id="LM_DG_Portfolio">
         <div id="s1-inicio" class="sección_2"> <!--Inicio-->
@@ -43,8 +36,14 @@
                 </div>
                 <div id="s1-1-2-portada"> <!--portada Portafolio-->
                     <div id="bienvenida" class="grid-container">
-                        <div id="bienvenida-IMG">
+                        <div class="bienvenida-IMG desktop">
                             <img class="IMG-Col" src="./assets/images/portfolio.png" alt="Portfolio">
+                        </div>
+                        <div class="bienvenida-IMG mobile">
+                            <img class="IMG-Col" src="./assets/images/portfolio-mobile.png" alt="Portfolio">
+                        </div> 
+                        <div class="bienvenida-IMG tablet">
+                            <img class="IMG-Col" src="./assets/images/portfolio-tablet.png" alt="Portfolio">
                         </div> 
                         <div id="Hi">
                             <h4>¡Hola! Soy</h4>
@@ -59,17 +58,23 @@
                             <h3 class="scroll-toggle">Mateo</h3>
                         </div>
                         <nav id="índice"> <!--índice-->
-                            <img id="índice-bullet" src="./assets/icons/bullet_1.png" alt="Bullet">
+                            <img id="i-bullet_2" class="bullet" src="./assets/icons/bullet_1.svg" alt="Bullet">
+                            <img id="i-bullet_1" class="bullet" src="./assets/icons/bullet_1.png" alt="Bullet">
                             <ul id="índice-lista" class="I-inicial">
                                 <li><button id="index-tipo" class="index-button button_2 unactive" data-category="tipografia">Tipografía</button></li>
                                 <li><button id="index-ilus" class="index-button button_2 unactive" data-category="ilustracion">Ilustración</button></li>
                                 <li><button id="index-iden" class="index-button button_2 unactive" data-category="identidad">Identidad</button></li>
                                 <li><button id="index-exp" class="index-button button_2 unactive" data-category="experimental">Experimental</button></li>
                             </ul>
+                            <div id="índice-contactos" class="display-info">
+                                <p class="paratexto_2"><span class="contacto" data-copy="lilimateodg@gmail.com">lilimateodg@gmail.com</span></p>
+                                <p class="paratexto_2"><span class="contacto" data-copy="+54 11 5043 3377">+54 11 5043 3377</span></p>
+                                <p class="paratexto_2"><span class="contacto" data-copy="+34 653 58 30 98">+34 653 58 30 98</span></p>
+                            </div>
                         </nav>
                         <div id="bienvenida-portada-txt">
-                            <h4>Bienvenido a mi</h4>
-                            <h5>Welcome to my</h5>
+                            <h4>Este es mi</h4>
+                            <h5>This is my</h5>
                         </div>
                     </div>
                 </div>
@@ -84,15 +89,11 @@
                         <img class="IMG-Col" src="./assets/images/sobremi.png" alt="Sobre mí">
                     </div>
                     <div id="sobremí-descripción">
-                        <div id="sobremí-descripción-txt">
-                            <p class="texto_1">
-                                Tipografia, dibujo, espacialidad y experimentación.
-                            </p>
-                            <p class="texto_1">
-                                Mis diseños y mis procesos no se encasillan en un solo área.
-                                Te invito a conocer mi trabajo.
-                            </p>
-                        </div>
+                        <p id="sobremí-descripción-txt" class="texto_1">
+                            Tipografía, dibujo, espacialidad y experimentación. <br>
+                            Mis diseños y mis procesos no se encasillan en un solo área.
+                            Te invito a conocer mi trabajo.
+                        </p>
                         <nav id="índice-secciones">
                             <p id="ANALÓGICA-button" class="section-button button_1 active" >analógica</p>
                             <p id="VECTORIAL-button" class="section-button button_1 unactive">vectorial</p>
@@ -104,15 +105,15 @@
         <div id="s2-analógica" class="sección_1"> <!--Analógica-->
             <div id="s2-1-portada">
                 <div id="analógica-portada" class="grid-container"> <!--portada Analógica-->
-                    <div id="analógica-IMG">
+                    <div class="analógica-IMG desktop">
                         <img class="IMG-Col" src="./assets/images/analogica.png" alt="Analógica">
                     </div>
-                    <div id="analógica-txt">
-                        <h5>En gran parte de mis diseños siguen presentes las técnicas tradicionales de trabajo gráfico.
-                        </h5>
-                        <h5>Considero que con ellas pueden alcanzarse resultados únicos y personales, con una expresividad diferente a la de las herramientas digitales modernas.
-                        </h5>
+                    <div class="analógica-IMG mobile">
+                        <img class="IMG-Col" src="./assets/images/analogica-mobile.png" alt="Analógica">
                     </div>
+                    <h5 id="analógica-txt">En gran parte de mis diseños siguen presentes las técnicas tradicionales de trabajo gráfico.
+                    <br>Considero que con ellas pueden alcanzarse resultados únicos y personales, con una expresividad diferente a la de las herramientas digitales modernas.
+                    </h5>
                 </div>
             </div>
             <div id="s2-2-proyectos" class="sección_2"> <!--Proyectos Analógica-->
@@ -137,51 +138,73 @@
                     </div>
                 </div>
                 <!--Tortugas-->
-                <div data-tags="ilustracion experimental" class="grid-container proyecto P_estandar_largo overflow-x">
-                    <div class="proyecto-txt">
-                        <p class="paratexto_1">2021</p>
-                        <h2>Tortugas</h2>
-                        <p id="txt-tortugas" class="texto_2">Búsqueda de diferentes lenguajes gráficos trabajando sobre un mismo sujeto. Experimentación con diferentes técnicas de ilustración e impresiones artesanal.</p>
-                        <div class="display-info">
-                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
-                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                <div data-tags="ilustracion experimental" class="proyecto P_estandar_largo">  
+                    <div class="grid-container overflow-x">
+                        <div class="proyecto-txt">
+                            <p class="paratexto_1">2021</p>
+                            <h2>Tortugas</h2>
+                            <p id="txt-tortugas" class="texto_2">Búsqueda de diferentes lenguajes gráficos trabajando sobre un mismo sujeto. Experimentación con diferentes técnicas de ilustración e impresiones artesanal.</p>
+                            <div class="display-info">
+                                <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                                <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proyecto-IMG display-info">
-                        <img class="IMG-Row" src="./assets/images/tortugas/playa g.jpg" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/tortugas/mondrian c.jpg" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/tortugas/psicodelico b.jpg" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/tortugas/cazador 2 b.jpg" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/tortugas/chill c.jpg" alt="proyecto imagen">
-                        <div class="behance">
+                        <div class="proyecto-IMG display-info">
+                            <div class="pL-IMG overflow-x-mob">
+                                <img class="IMG-Row" src="./assets/images/tortugas/playa g.jpg" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/tortugas/mondrian c.jpg" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/tortugas/psicodelico b.jpg" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/tortugas/cazador 2 b.jpg" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/tortugas/chill c.jpg" alt="proyecto imagen">
+                                <div class="behance desktop">
+                                    <h3>
+                                        <a href="https://www.behance.net/gallery/124692023/Lenguajes" target="_blank" class="link-behance unactive">+Behance</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="degrade-plus mobile"></div>
+                        </div>
+                        <div class="behance mobile">
                             <h3>
                                 <a href="https://www.behance.net/gallery/124692023/Lenguajes" target="_blank" class="link-behance unactive">+Behance</a>
                             </h3>
                         </div>
                     </div>
+                    <div class="degrade-plus desktop"></div>
                 </div>
                 <!--Escrachos-->
-                <div data-tags="ilustracion" class="grid-container proyecto P_estandar_largo overflow-x">
-                    <div class="proyecto-txt">
-                        <p class="paratexto_1">2022</p>
-                        <h2>Escrachos</h2>
-                        <p id="txt-escrachos" class="texto_2">En los tiempos modernos todos somos fotógrafos. Como lado B de esos retratos perfectamente pulidos y retocados que publicamos en redes, tenemos también esas capturas que escondemos y guardamos entre amigos y familiares. Esos momentos desprolijos pero honestos que guardamos de recuerdo con cariño, como chiste interno.
-                            Estos dibujos son reinterpretaciones de algunos de esos escraches.</p>
-                        <div class="display-info">
-                            <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                <div data-tags="ilustracion" class="proyecto P_estandar_largo">
+                    <div class="grid-container overflow-x">
+                        <div class="proyecto-txt">
+                            <p class="paratexto_1">2022</p>
+                            <h2>Escrachos</h2>
+                            <p id="txt-escrachos" class="texto_2">En los tiempos modernos todos somos fotógrafos. Como lado B de esos retratos perfectamente pulidos y retocados que publicamos en redes, tenemos también esas capturas que escondemos y guardamos entre amigos y familiares. Esos momentos desprolijos pero honestos que guardamos de recuerdo con cariño, como chiste interno.
+                                Estos dibujos son reinterpretaciones de algunos de esos escraches.</p>
+                            <div class="display-info">
+                                <p data-tag="Ilustración" class="paratexto_2">Ilustración</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="proyecto-IMG display-info">
-                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-01.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-02.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-03.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-04.png" alt="proyecto imagen">
-                        <div class="behance">
+                        <div class="proyecto-IMG display-info">
+                            <div class="pL-IMG overflow-x-mob">
+                                <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-01.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-02.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-03.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Escrachos/escrachos-04.png" alt="proyecto imagen">
+                                <div class="behance desktop">
+                                    <h3>
+                                        <a href="https://www.behance.net/gallery/161045225/Escrachos" target="_blank" class="link-behance unactive">+Behance</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="degrade-plus mobile"></div>
+                        </div>
+                        <div class="behance mobile">
                             <h3>
                                 <a href="https://www.behance.net/gallery/161045225/Escrachos" target="_blank" class="link-behance unactive">+Behance</a>
                             </h3>
                         </div>
                     </div>
+                    <div class="degrade-plus desktop"></div>
                 </div>
                 <!--Bitacoras-->
                 <div class="grid-container">
@@ -226,12 +249,9 @@
                                 <p class="paratexto_1">2023</p>
                                 <div class="proyecto-txt">
                                     <h1>Manifiestos del surrealismo</h1>
-                                    <div id="txt-manifiesto">
-                                        <p class="texto_2">En 1924 André Bretón publicó el Primer Manifiesto Surrealista, en Francia. En 1992, la editorial Argonauta presentó la primera traducción al español de ese escrito, redactada por Aldo Pelegrini y titulada Manifiestos del Surrealismo.
-                                        </p>
-                                        <p class="texto_2">Esta es una edición artesanal realizada a partir de extractos de dicha traducción.
-                                        </p>
-                                    </div>
+                                    <p id="txt-manifiesto" class="texto_2">En 1924 André Bretón publicó el Primer Manifiesto Surrealista, en Francia. En 1992, la editorial Argonauta presentó la primera traducción al español de ese escrito, redactada por Aldo Pelegrini y titulada Manifiestos del Surrealismo.
+                                    <br>Esta es una edición artesanal realizada a partir de extractos de dicha traducción.
+                                    </p>
                                     <div class="display-info">
                                         <p data-tag="Editorial" class="paratexto_2">Editorial</p>
                                     </div>
@@ -284,12 +304,9 @@
                                 <p class="paratexto_1">2024</p>
                                 <div class="proyecto-txt">
                                     <h1>Madre (Haha)</h1>
-                                    <div id="txt-haha">
-                                        <p class="texto_2">Yasunari Kawabata publicó en 1968 una recopilación de cuentos titulada «Historias en la palma de la mano» («Enohira no Shōsetsu», en el japonés original).
-                                        </p>
-                                        <p class="texto_2">«Madre» («Haha») es uno de los incluidos en esa selección, presentado en este proyecto en formato de libro no-convencional.
-                                        </p>
-                                    </div>
+                                    <p id="txt-haha" class="texto_2">Yasunari Kawabata publicó en 1968 una recopilación de cuentos titulada «Historias en la palma de la mano» («Enohira no Shōsetsu», en el japonés original).
+                                    <br>«Madre» («Haha») es uno de los incluidos en esa selección, presentado en este proyecto en formato de libro no-convencional.
+                                    </p>
                                     <div class="display-info">
                                         <p data-tag="Editorial" class="paratexto_2">Editorial</p>
                                         <p data-tag="Experimental" class="paratexto_2">Experimental</p>
@@ -410,32 +427,39 @@
                         </div>
                     </div>
                 </div>
-                </div>
                 <!--Serie-->
-                <div data-tags="experimental" class="grid-container proyecto P_estandar_largo overflow-x">
-                    <div class="proyecto-txt">
-                        <p class="paratexto_1">2022</p>
-                        <h2>Serie</h2>
-                        <div id="txt-serie">
-                            <p class="texto_2">Siete composiciones abstractas.</p>
-                            <p class="texto_2">Un estudio sobre el ritmo, la pregnancia, y los niveles compositivos. Experimentación con materialidad.</p>
+                <div data-tags="experimental" class="proyecto P_estandar_largo">
+                    <div class="grid-container overflow-x">
+                        <div class="proyecto-txt">
+                            <p class="paratexto_1">2022</p>
+                            <h2>Serie</h2>
+                            <p id="txt-serie" class="texto_2">Siete composiciones abstractas.
+                            <br>Un estudio sobre el ritmo, la pregnancia, y los niveles compositivos. Experimentación con materialidad.
+                            </p>
+                            <div class="display-info">
+                                <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                            </div>
                         </div>
-                        <div class="display-info">
-                            <p data-tag="Experimental" class="paratexto_2">Experimental</p>
+                        <div class="proyecto-IMG display-info">
+                            <div class="pL-IMG overflow-x-mob">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-01.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-02.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-03.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-04.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-05.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-06.png" alt="proyecto imagen">
+                                <img class="IMG-Row" src="./assets/images/Serie/serie-07.png" alt="proyecto imagen">
+                                <div class="behance desktop">
+                                    <h3 class="link-behance unactive">+Behance</h3>
+                                </div>
+                            </div>
+                            <div class="degrade-plus mobile"></div>
                         </div>
-                    </div>
-                    <div class="proyecto-IMG display-info">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-01.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-02.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-03.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-04.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-05.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-06.png" alt="proyecto imagen">
-                        <img class="IMG-Row" src="./assets/images/Serie/serie-07.png" alt="proyecto imagen">
-                        <div class="behance">
+                        <div class="behance mobile">
                             <h3 class="link-behance unactive">+Behance</h3>
                         </div>
                     </div>
+                    <div class="degrade-plus desktop"></div>
                 </div>
                 <!--Búsquedas-->
                 <div class="grid-container">
@@ -458,17 +482,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div id="s3-vectorial" class="sección_1"> <!--Vectorial-->
             <div id="s3-1-portada">
                 <div id="vectorial-portada" class="grid-container">
-                    <div id="vectorial-IMG">
+                    <div class="vectorial-IMG desktop">
                         <img class="IMG-Col" src="./assets/images/vectorial.png" alt="Vectorial">
                     </div>
-                    <div id="vectorial-txt">
-                        <h5>Las herramientas digitales me permiten un trabajo más meticuloso.</h5>
-                        <h5>En estos diseños resalta la atención al detalle, el ajuste y la construcción de sistemas.</h5>
+                    <div class="vectorial-IMG mobile">
+                        <img class="IMG-Col" src="./assets/images/vectorial-mobile.png" alt="Vectorial">
                     </div>
+                    <h5 id="vectorial-txt">Las herramientas digitales me permiten un trabajo más meticuloso.
+                    <br>En estos diseños resalta la atención al detalle, el ajuste y la construcción de sistemas.
+                    </h5>
                 </div>
             </div>
             <div id="s3-2-proyectos" class="sección_2">
@@ -487,7 +514,6 @@
                                     <div class="display-info">
                                         <p data-tag="Identidad" class="paratexto_2">Sistema de identidad</p>
                                         <p data-tag="Afiche" class="paratexto_2">Afiche</p>
-                                        <p data-tag="Editorial" class="paratexto_2">Editorial</p>
                                         <p data-tag="Web" class="paratexto_2">Web</p>
                                     </div>
                                 </div>
@@ -669,8 +695,19 @@
           video.load();
         });
     </script>
+    <script>
+        function isMobileDevice() {
+            return /android|iphone|ipad|ipod|mobile/i.test(navigator.userAgent);
+        };
+
+
+        if (isMobileDevice()) {
+            document.body.classList.add("mob");
+        } else {
+            document.body.classList.add("desktop");
+        };
+    </script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/lang.js" defer></script>
-    <script src="scripts/device.js" defer></script>
 </body>
 </html>
