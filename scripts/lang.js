@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <h5>Hi! I'm</h5>
             `,
             bienvenido: `
-            <h4>Bienvenido a mi</h4>
-            <h5>Welcome to my</h5>
+            <h4>Este es mi</h4>
+            <h5>This is my</h5>
             `,
         },
         ENG: {
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <h5>¡Hola! Soy</h5>
             `,
             bienvenido: `
-            <h4>Welcome to my</h4>
-            <h5>Bienvenido a mi</h5>
+            <h4>This is my</h4>
+            <h5>Este es mi</h5>
             `,
         },
     };
@@ -36,28 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 exp: "Experimental",
             },
             dg: "Diseñadora Gráfica",
-            sm: [
-                "Tipografia, dibujo, espacialidad y experimentación.",
-                "Mis diseños y mis procesos no se encasillan en un solo área. Te invito a conocer mi trabajo.",
-            ],
-            analog: [
-                "En gran parte de mis diseños siguen presentes las técnicas tradicionales de trabajo gráfico.",
-                "Considero que con ellas pueden alcanzarse resultados únicos y personales, con una expresividad diferente a la de las herramientas digitales modernas.",
-            ],
-            vec: [
-                "Las herramientas digitales me permiten un trabajo más meticuloso.",
-                "En estos diseños resalta la atención al detalle, el ajuste y la construcción de sistemas.",
-            ],
-
+            sm: 
+                `Tipografía, dibujo, espacialidad y experimentación.
+                <br>
+                Mis diseños y mis procesos no se encasillan en un solo área. Te invito a conocer mi trabajo.`,
+            analog: `En gran parte de mis diseños siguen presentes las técnicas tradicionales de trabajo gráfico.
+                <br>
+                Considero que con ellas pueden alcanzarse resultados únicos y personales, con una expresividad diferente a la de las herramientas digitales modernas.`,
+            vec: `Las herramientas digitales me permiten un trabajo más meticuloso.
+                <br>
+                En estos diseños resalta la atención al detalle, el ajuste y la construcción de sistemas.`,
             mamanchi: "Propuesta de afiche para el cortometraje documental «Mamanchi», dirigido por Robert Verástegui en 2021.",
             tortugas: "Búsqueda de diferentes lenguajes gráficos trabajando sobre un mismo sujeto. Experimentación con diferentes técnicas de ilustración e impresiones artesanal.",
             escrachos: "En los tiempos modernos todos somos fotógrafos. Como lado B de esos retratos perfectamente pulidos y retocados que publicamos en redes, tenemos también esas capturas que escondemos y guardamos entre amigos y familiares. Esos momentos desprolijos pero honestos que guardamos de recuerdo con cariño, como chiste interno. Estos dibujos son reinterpretaciones de algunos de esos escraches.",
             bit1: "Acuarela, lápiz y marcador sobre cartón blanco",
             bit2: "Marcador POSCA y acrílico sobre fibrofácil",
-            manifiesto: [
-                "En 1924 André Bretón publicó el Primer Manifiesto Surrealista, en Francia. En 1992, la editorial Argonauta presentó la primera traducción al español de ese escrito, redactada por Aldo Pelegrini y titulada Manifiestos del Surrealismo.",
-                "Esta es una edición artesanal realizada a partir de extractos de dicha traducción.",
-            ],
+            manifiesto: `En 1924 André Bretón publicó el Primer Manifiesto Surrealista, en Francia. En 1992, la editorial Argonauta presentó la primera traducción al español de ese escrito, redactada por Aldo Pelegrini y titulada Manifiestos del Surrealismo.
+                <br>
+                Esta es una edición artesanal realizada a partir de extractos de dicha traducción.`,
             manifiestoSec: [
                 "Intervenciones realizadas a mano con bisturí",
                 "Plaqueta de 80 páginas, formato cerrado A5",
@@ -65,10 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Interior: Splendorgel 90gr, Ygrid rojo 90gr",
                 "Intervenciones realizadas a mano con bisturí",
             ],
-            haha: [
-                "Yasunari Kawabata publicó en 1968 una recopilación de cuentos titulada «Historias en la palma de la mano» («Enohira no Shōsetsu», en el japonés original).",
-                "«Madre» («Haha») es uno de los incluidos en esa selección, presentado en este proyecto en formato de libro no-convencional.",
-            ],
+            haha: `Yasunari Kawabata publicó en 1968 una recopilación de cuentos titulada «Historias en la palma de la mano» («Enohira no Shōsetsu», en el japonés original).
+            <br>>
+            «Madre» («Haha») es uno de los incluidos en esa selección, presentado en este proyecto en formato de libro no-convencional.`,
             hahaSEC: [
                 "Encuadernación no convencional, impresión chorro de tinta sobre tela para lienzo",
                 "Interior: Tiziano brina 160gr, Elle Erre blanco 220gr, y Obra 150gr",
@@ -80,10 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Primer esquicio a partir del cual se siguió desarrollando la idea",
                 "Improvisación con téctina de stop-motion",
             ],
-            serie: [
-                "Siete composiciones abstractas.",
-                "Un estudio sobre el ritmo, la pregnancia, y los niveles compositivos. Experimentación con materialidad.",
-            ],
+            serie: `Siete composiciones abstractas.
+            <br>
+            Un estudio sobre el ritmo, la pregnancia, y los niveles compositivos. Experimentación con materialidad.`,
             busquedas: "Un vistazo al contenido de mis bitácoras",
             NG: "Campaña social de concientización sobre las niñeces en condición de adoptabilidad, inspirada en el colectivo detrás del #AdoptáNiñesGrandes en redes sociales.",
             NGsec: [
@@ -113,27 +107,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 exp: "Experimental",
             },
             dg: "Graphic Designer",
-            sm: [
-                "Typography, drawing, spatiality, and experimentation.",
-                "My designs and creative processes don’t fit into just one box. I invite you to explore my work.",
-            ],
-            analog: [
-                "Many of my designs still incorporate traditional graphic techniques.",
-                "I believe they can achieve unique and personal results, with a kind of expressiveness that differs from modern digital tools.",
-            ],
-            vec: [
-                "Digital tools allow me to work more meticulously.",
-                "These designs highlight attention to detail, precision, and the construction of systems.",
-            ],
+            sm: `Typography, drawing, spatiality, and experimentation.
+                <br>
+                My designs and creative processes don’t fit into just one box. I invite you to explore my work.`,
+            analog: `Many of my designs still incorporate traditional graphic techniques.
+                <br>
+                I believe they can achieve unique and personal results, with a kind of expressiveness that differs from modern digital tools.`,
+            vec: `Digital tools allow me to work more meticulously.
+                <br>
+                These designs highlight attention to detail, precision, and the construction of systems.`,
             mamanchi: "Poster proposal for the short documentary Mamanchi, directed by Robert Verástegui in 2021.",
             tortugas: "An exploration of different graphic languages using a single subject. Experimentation with various illustration techniques and handmade prints.",
             escrachos: "In modern times, we are all photographers. As a B-side to those polished, retouched portraits we post on social media, we also have those snapshots we hide and share only with close friends and family—messy but honest moments we treasure like inside jokes. These drawings are reinterpretations of some of those candid shots.",
             bit1: "Watercolor, pencil, and marker on white cardboard",
             bit2: "POSCA marker and acrylic on MDF board",
-            manifiesto: [
-                "In 1924, André Breton published the First Surrealist Manifesto in France. In 1992, the publisher Argonauta released the first Spanish translation, written by Aldo Pellegrini and titled Surrealist Manifestos.",
-                "This is a handcrafted edition based on excerpts from that translation.",
-            ],
+            manifiesto:
+                `In 1924, André Breton published the First Surrealist Manifesto in France. In 1992, the publisher Argonauta released the first Spanish translation, written by Aldo Pellegrini and titled Surrealist Manifestos.
+                <br>
+                This is a handcrafted edition based on excerpts from that translation.`,
             manifiestoSec: [
                 "Editorial system based on cut-outs and die-cuts.",
                 "80-page booklet, closed A5 format",
@@ -141,10 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Interior: 90gsm Splendorgel, 90gsm Ygrid Red",
                 "Handmade interventions using a scalpel",
             ],
-            haha: [
-                "YIn 1968, Yasunari Kawabata published a short story collection titled Palm-of-the-Hand Stories (Enohira no Shōsetsu, in the original Japanese).",
-                "Mother (Haha) is one of the stories included in that selection, presented in this project in a non-conventional book format.",
-            ],
+            haha: `YIn 1968, Yasunari Kawabata published a short story collection titled Palm-of-the-Hand Stories (Enohira no Shōsetsu, in the original Japanese).
+                <br>
+                Mother (Haha) is one of the stories included in that selection, presented in this project in a non-conventional book format.`,
             hahaSEC: [
                 "Unconventional binding, inkjet printing on canvas fabric",
                 "Interior: Tiziano Brina 160gsm, Elle Erre White 220gsm, and Obra 150gsm",
@@ -156,10 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Initial draft that sparked the further development of the idea",
                 "Improvisation using stop-motion technique",
             ],
-            serie: [
-                "Seven abstract compositions.",
-                "A study on rhythm, visual impact, and compositional levels. Material experimentation.",
-            ],
+            serie: `Seven abstract compositions.
+                <br>
+                A study on rhythm, visual impact, and compositional levels. Material experimentation.`,
             busquedas: "A glimpse into the content of my sketchbooks",
             NG: "Social awareness campaign about children in adoptability situations, inspired by the collective behind #AdoptáNiñosGrandes on social media.",
             NGsec: [
@@ -207,32 +196,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // traducir sobre mí
         document.getElementById("dg").textContent = textos[lang].dg;
-
-        const smtext = document.getElementById("sobremí-descripción-txt");
-        parrafosDinamicos(smtext, textos[lang].sm);
-
+        document.getElementById("sobremí-descripción-txt").innerHTML = textos[lang].sm;
+        
         // traducir analogica
-        const analogtext = document.getElementById("analógica-txt");
-        parrafosDinamicos(analogtext, textos[lang].analog, textos[lang].analog);
-
+        document.getElementById("analógica-txt").innerHTML = textos[lang].analog;
+    
         // traducir vectorial
-        const vectext = document.getElementById("vectorial-txt");
-        parrafosDinamicos(vectext, textos[lang].vec, textos[lang].vec);
-
+        document.getElementById("vectorial-txt").innerHTML = textos[lang].vec;
+    
         // traducir proyectos
         document.getElementById("txt-mamanchi").textContent = textos[lang].mamanchi;
         document.getElementById("txt-tortugas").textContent = textos[lang].tortugas;
         document.getElementById("txt-escrachos").textContent = textos[lang].escrachos;
         document.getElementById("txt-bit1").textContent = textos[lang].bit1;
         document.getElementById("txt-bit2").textContent = textos[lang].bit2;
-
-        const manifiestotext = document.getElementById("txt-manifiesto");
-        parrafosDinamicos(manifiestotext, textos[lang].manifiesto);
+        
+        document.getElementById("txt-manifiesto").innerHTML = textos[lang].manifiesto;
         const manifiestossec = document.getElementById("txt-sec-manifiesto");
         parrafosDinamicos(manifiestossec, textos[lang].manifiestoSec);
         
-        const hatext = document.getElementById("txt-haha");
-        parrafosDinamicos(hatext, textos[lang].haha, textos[lang].haha);
+        document.getElementById("txt-haha").innerHTML = textos[lang].haha;
         const hasec = document.getElementById("txt-sec-HAHA");
         parrafosDinamicos(hasec, textos[lang].hahaSEC);
 
@@ -243,11 +226,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const AEMsec = document.getElementById("txt-sec-AEM");
         parrafosDinamicos(AEMsec, textos[lang].AEMsec);
 
-        const serietext = document.getElementById("txt-serie");
-        parrafosDinamicos(serietext, textos[lang].serie, textos[lang].serie);
-
+        document.getElementById("txt-serie").innerHTML = textos[lang].serie;
         document.getElementById("txt-busquedas").textContent = textos[lang].busquedas;
         document.getElementById("txt-NG").textContent = textos[lang].NG;
+       
         const NGsec = document.getElementById("txt-sec-NG");
         parrafosDinamicos(NGsec, textos[lang].NGsec);
 
